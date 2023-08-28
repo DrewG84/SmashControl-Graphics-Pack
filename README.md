@@ -9,12 +9,11 @@ Inside the graphics pack, in the "css" folder, there is a file called "customize
 
 ### Colors
 You can change the following colors by changing the hex codes in "customize.css"
-> --bg-color: The background color for all of the graphics elements;
-
-> --main-text: The color for player tags and other text;
-
->	--accent: The accent color for secondary boxes and icons. This should be different from your Main Text color;
-
+```
+    --bg-color: The background color for all of the graphics elements;
+    --main-text: The color for player tags and other text;
+    --accent: The accent color for secondary boxes and icons. This should be different from your Main Text color;
+```
 ### Logo
 Inside "customize.css", you can choose whether or not to display the logo, but to change it, you need to place your logo in the "images" folder with the file name "logo.png"
 
