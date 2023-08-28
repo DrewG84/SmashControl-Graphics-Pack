@@ -1,0 +1,42 @@
+{
+  "name": "scrimblo-stream-overlays",
+  "version": "1.0.0",
+  "description": "customizable Smash Bros stream graphics",
+  "homepage": "drewgenel.wordpress.com",
+  "author": "Drew Genel, swc19",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "html-to-image": "^0.1.1"
+  },
+  "nodecg": {
+    "compatibleRange": "^1.0.0",
+    "bundleDependencies": {},
+    "graphics": [
+      {
+        "file": "gameplay.html",
+        "width": 1920,
+        "height": 1080
+      },
+	  {
+        "file": "break.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+          "file": "players-cam.html",
+          "width": 1920,
+          "height": 1080
+        },
+      {
+          "file": "comms-cam.html",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+            "file": "thumbnail.html",
+            "width": 1920,
+            "height": 1080
+          }
+    ]
+  }
+}

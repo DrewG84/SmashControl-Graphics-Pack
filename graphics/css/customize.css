@@ -1,0 +1,17 @@
+:root {
+	/* You can edit the HTML color codes here to change the colors of the basic components of the layout */
+	--bg-color: #115C69;
+	--main-text: #F9E5E5;
+	--accent: #73CCD5;
+
+	/* Change to 'hidden' if you don't want the logo to appear, and 'visible' if you do */
+	--logo: visible;
+
+	/* Set to '1s' to enable transition animations on the gameplay and commentator screens. Set to '0s' again to disable */
+	--animation: 1s;
+
+	/* Set to 'inline' to show character stock icons, and 'none' to hide */
+	
+	/* Character icons are a work in progress and do not currently work well, especially on screens other than Gameplay. I recommend leaving them off */
+	--char-icons: none;
+}

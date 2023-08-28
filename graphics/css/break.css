@@ -1,0 +1,450 @@
+@font-face {
+    font-family: Forma-djr;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Forma DJR Display Black'), url('/graphics/font/FormaDJRDisplay-Black-Testing.woff') format('woff');
+    }
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	display: block;
+	font-family: forma-djr;
+	width: 1920px;
+	height: 1080px;
+	font-size: 18px;
+	position: relative;
+}
+
+.scoreboard {
+    z-index: -1;
+    position: absolute;
+    left: calc(490px + 257px);
+    top: calc(35px + 575px);
+    animation: up var(--animation) ease-in-out calc(var(--animation) * 2);
+    animation-fill-mode: both;
+}
+@keyframes down {
+    0%   {top:-50px}
+    80%   {top:40px}
+    100%   {top:35px}
+}
+@keyframes up {
+    0%   {top: calc(35px + 650px);
+        opacity: 0;}
+    80%   {top: calc(35px + 570px);
+        opacity: 60;}
+    100%   {top: calc(35px + 575px);
+        opacity: 100;}
+}
+.player-container {
+    position: absolute;
+	/* left: calc(490px + 282px);
+	top: calc(35px + 575px); */
+	width: 1020px;
+    height: 45px;
+    background-color: var(--bg-color);
+}
+.player1-accent {
+    position: absolute;
+    top: 39px;
+	width: 45px;
+    height: 6px;
+    background-color: var(--accent);
+}
+.player1-score {
+    position: absolute;
+	left: 8.5px;
+	top: 6px;
+	width: 28px;
+    height: 28px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--main-text);
+}
+.mid-scoreboard {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    left: 45px;
+    width: 931px;
+    height: 45px;
+}
+.player1 {
+	top: 8px;
+	width: auto;
+    /* min-width: 300px; */
+    max-width: 400px;
+    height: 28px;
+    padding: 8px;
+    padding-left: 15px;
+}
+.player1-tag {
+    position: relative;
+    width: 250px;
+    color: var(--main-text);
+    font-size: 28px;
+    height: 28px;
+    top: -50px;
+    
+
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+    
+}
+.player1-pronouns {
+    position: relative;
+    background-color: var(--accent);
+    color: var(--main-text);
+    width: 55px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-transform: capitalize;
+    left: 200px;
+    top: -22px;
+
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    
+
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+}
+.player1-icon {
+    position: relative;
+    left: 200px;
+    top: -44px;
+
+    width: 28px;
+    height: 28px;
+    display: var(--char-icons);
+}
+.player1-icon > img {
+    width: 28px;
+    height: 28px;
+    display: var(--char-icons);
+    object-fit: cover;
+}
+.player2-accent {
+    position: absolute;
+	left: 975px;
+	top: 39px;
+	width: 45px;
+    height: 6px;
+    background-color: var(--accent);
+}
+.player2-score {
+    position: absolute;
+	left: 985px;
+	top: 6px;
+	width: 28px;
+    height: 28px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--main-text);
+}
+.player2 {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row-reverse nowrap;
+    /* position: absolute; */
+	top: 8px;
+	width: 300px;
+    /* min-width: 300px; */
+    max-width: 400px;
+    height: 28px;
+    padding: 8px;
+    padding-right: 15px;
+}
+.player2-tag {
+    position: relative;
+    width: 310px;
+    color: var(--main-text);
+    font-size: 28px;
+    height: 28px;
+    top: -50px;
+    text-align: right;
+
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+    
+}
+.player2-pronouns {
+    position: absolute;
+    background-color: var(--accent);
+    color: var(--main-text);
+    width: 55px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-transform: capitalize;
+
+    left: 0px;
+    top: 14px;
+
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+}
+.player2-icon {
+    position: absolute;
+    left: 0px;
+    top: 9px;
+
+    width: 28px;
+    height: 28px;
+    display: var(--char-icons);
+}
+.player2-icon > img {
+    width: 28px;
+    height: 28px;
+    display: var(--char-icons);
+    object-fit: cover;
+}
+.vs {
+    width: 67px;
+    height: 45px;
+}
+.vs-accent {
+    position: relative;
+	top: 39px;
+	width: 67px;
+    height: 6px;
+    background-color: var(--accent);
+}
+.vs-text {
+    position: relative;
+	top: 0px;
+    left: 12px;
+	width: 43px;
+    height: 23px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--accent);
+}
+
+.infobox {
+    position: absolute;
+    left: 1278px;
+    top: 728px;
+    width: 563px;
+    height: 317px;
+    background-color: var(--main-text);
+}
+.commentators {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 758px;
+    left: 1308px;
+    height: 300px;
+    width: auto;
+    justify-content: flex-start;
+}
+.com1-board {
+    margin-bottom: 15px;
+    height: 45px;
+    width: 503px;
+    background-color: var(--bg-color);
+}
+.com1-icon {
+	width: 45px;
+    height: 45px;
+}
+.com1 {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    position: absolute;
+	left: 61px;
+	top: 8px;
+	width: 503px;
+    height: 28px;
+    
+    
+}
+.com1-tag {
+    width: 340px;
+    color: var(--main-text);
+    font-size: 28px;
+    height: 28px;
+
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+    
+}
+.com1-pronouns {
+    position: absolute;
+    background-color: var(--accent);
+    color: var(--main-text);
+    width: 55px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-transform: capitalize;
+
+    left: 0px;
+    top: 7px;
+
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+}
+.com2-board {
+    margin-bottom: 15px;
+    position: relative;
+    height: 45px;
+    width: 503px;
+    background-color: var(--bg-color);
+}
+.com2-icon {
+	width: 45px;
+    height: 45px;
+}
+.com2 {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    position: absolute;
+	left: 61px;
+	top: 8px;
+	width: 503px;
+    height: 28px;
+}
+.com2-tag {
+    width: 340px;
+    color: var(--main-text);
+    font-size: 28px;
+    height: 28px;
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+    
+}
+.com2-pronouns {
+    position: absolute;
+    background-color: var(--accent);
+    color: var(--main-text);
+    width: 55px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-transform: capitalize;
+
+    left: 0px;
+    top: 7px;
+
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    /* box-sizing: border-box;
+    border: 1px solid white; */
+}
+.bracket-board {
+    position: absolute;
+    left: 1308px;
+    top: 970px;
+}
+.bracket-container {
+    position: absolute;
+	width: 390px;
+    height: 45px;
+    background-color: var(--bg-color);
+}
+.bracket-accent {
+    position: absolute;
+	top: 39px;
+	width: 105px;
+    height: 6px;
+    background-color: var(--accent);
+}
+.game-display {
+    position: absolute;
+	top: 8px;
+	width: 105px;
+    height: 22px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--accent);
+}
+.bracket-location {
+    position: absolute;
+	left: 121px;
+	top: 8px;
+	width: 254px;
+    height: 28px;
+    font-size: 28px;
+    text-align: left;
+    color: var(--main-text);
+    overflow: hidden;
+}
+img {
+    position: absolute;
+    left: 75px;
+    top: 127px;
+    width: 563px;
+    height: 563px;
+    object-fit: cover;
+    visibility: var(--logo);
+}
+.left-ear {
+    position: absolute;
+    left: 7px;
+    top: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: var(--accent);
+}
+.right-ear {
+    position: absolute;
+    left: 26px;
+    top: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: var(--accent);
+}
+.mic-arm {
+    position: absolute;
+    left: 32px;
+    top: 21px;
+    height: 15px;
+    width: 6px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--accent);
+}
+.mic-tip {
+    position: absolute;
+    left: 23px;
+    top: 30px;
+    height: 6px;
+    width: 15px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--accent);
+}
+.mic-bottom {
+    position: absolute;
+    left: 0px;
+    top: 39px;
+    height: 6px;
+    width: 45px;
+    background-color: var(--accent);
+}
+.headband {
+    position: absolute;
+    box-sizing: border-box;
+    left: 7px;
+    top: 6px;
+    height: 20px;
+    width: 31px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 6px solid var(--accent);
+    border-left: 6px solid var(--accent);
+    border-right: 6px solid var(--accent);
+}

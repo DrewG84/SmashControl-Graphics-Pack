@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Thumbnail</title>
+	<link href="css/customize.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/thumbnail.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+	<script src="js/thumbnail-gen.js"></script>
+
+</head>
+<body>
+
+<div class="thumbnail-container">
+	<button class="save-to-image ui-button ui-widget" onclick="takeScreen()">Save as Image</button>
+	<div class="thumbnail">
+
+		<div class="box"></div>
+
+
+		<div class="renders">
+			<div class="render1">
+				<div class="image player1-render"><img src=""></div>
+			</div>
+			<div class="render2">
+				<div class="image player2-render"><img src=""></div>
+			</div>
+		</div>
+
+		
+		<!-- <svg width="1920" height="1080" z-index="2">
+			<mask id="cam-masks">
+				<rect fill="#ffffff" x="0" y="0" width="1920" height="1080"></rect>
+			  <rect fill="#000000" x="70" y="70" width="1000" height="562.5"></rect>
+			  <rect fill="#000000" x="850" y="447.5" width="1000" height="562.5"></rect>
+			</mask>
+			<rect fill="var(--bg-color)" x="0" y="0" width="1920" height="1080" mask="url(#cam-masks)" mask-composite="exclude";></rect>
+		  </svg> -->
+		
+
+			<div class="text player1-tag"></div>
+			<div class="text player2-tag"></div>
+			<div class="bracket-container">
+				<div class="text bracket-location"></div>
+			</div>
+
+			<div class="versus">
+				<div class="versus-text">VS</div>
+				<div class="versus-accent"></div>
+			</div>
+		
+	
+			<img class="logo" src="images/logo.png">
+		
+		
+		
+		
+	
+	</div>
+</div>
+
+
+
+</body>
+</html>

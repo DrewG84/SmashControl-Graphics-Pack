@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Forma-djr;
+    font-style: normal;
+    font-weight: normal;
+    src: local('Forma DJR Display Black'), url('/graphics/font/FormaDJRDisplay-Black-Testing.woff') format('woff');
+    }
+body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+}
+.thumbnail-container{
+	font-family: Forma-djr;
+	display: block;
+
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	overflow: hidden;
+}
+.thumbnail{
+	width: 1920px;
+	height: 1080px;
+	background-color: var(--bg-color);
+	
+}
+
+/* .box {
+	width: 1920px;
+	height: 1080px;
+	z-index: -5;
+	background-color: var(--bg-color); 
+} */
+
+.render1 {
+	position: absolute;
+	left: 70px;
+	top: 70px;
+	width: 1000px;
+	height: 562.5px;
+	overflow: hidden;
+	
+}
+.player1-render > img {
+	
+	position: relative;	
+	left: -150px;
+	top: -200px;
+	max-width: 1300px;
+	/* max-height: 972px; */
+	object-fit: cover;
+	transform: scale(1);
+	background-color: var(--accent);
+}
+.render2 {
+	position: absolute;
+	left: 850px;
+	top: 447.5px;
+	width: 1000px;
+	height: 562.5px;
+	overflow: hidden;
+	
+}
+.player2-render  > img {
+
+	position: relative;	
+	left: -150px;
+	top: -200px;
+	max-width: 1300px;
+	
+	object-fit: cover;
+	transform: scale(-1, 1);
+	background-color: var(--accent);
+}
+/* .render img{
+	position: relative;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	max-width: 1080px;
+	max-height: 1080px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	z-index: 200;
+	transform: scale(1);
+} */
+
+.ui-button{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	z-index: 4;
+	left: 875px;
+}
+.bracket-container {
+	position: absolute;
+	background-color: var(--accent);
+	top: 950px;
+	left: 70px;
+	height: 60px;
+	width: 390px;
+}
+.bracket-location{
+	position: absolute;
+	color: var(--main-text);
+	top: 10px;
+	left: 20px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 40px;
+	width: 350px;
+	
+}
+.player1-tag{
+	position: absolute;
+	color: var(--main-text);
+	text-align: right;
+	top: 672.5px;
+	left: 70px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 100px;
+	width: 680px;
+}
+.player2-tag{
+	position: absolute;
+	color: var(--main-text);
+	text-align: left;
+	top: 307.5px;
+	left: 1170px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 100px;
+	width: 680px;
+}
+.versus {
+	z-index: 3;
+	position: absolute;
+	left: 793.5px;
+	top: 373.5px;
+	width: 333px;
+	height: 333px;
+	background-color: var(--bg-color);
+}
+.versus-text {
+	position: relative;
+	left: 21.5px;
+	top: 52px;
+	width: 290px;
+	height: 190px;
+	font-size: 194px;
+    text-align: center;
+    color: var(--main-text);
+}
+.versus-accent {
+	position: absolute;
+	left: 0px;
+	top: 293px;
+	width: 333px;
+	height: 40px;
+	background-color: var(--main-text);
+}
+.logo {
+	z-index: 3;
+    position: absolute;
+    left: 1650px;
+    top: 70px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    visibility: var(--logo);
+}
