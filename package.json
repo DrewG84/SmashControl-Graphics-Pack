@@ -1,15 +1,15 @@
 {
-  "name": "scrimblo-stream-overlays",
+  "name": "SmashControl-Graphics-Pack-main",
   "version": "1.0.0",
   "description": "customizable Smash Bros stream graphics",
-  "homepage": "drewgenel.wordpress.com",
+  "homepage": "drewgenel.com",
   "author": "Drew Genel, swc19",
   "license": "GPL-3.0",
   "dependencies": {
     "html-to-image": "^0.1.1"
   },
   "nodecg": {
-    "compatibleRange": "^1.0.0",
+    "compatibleRange": "^2.0.0",
     "bundleDependencies": {},
     "graphics": [
       {
