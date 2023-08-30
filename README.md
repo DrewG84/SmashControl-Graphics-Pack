@@ -26,3 +26,9 @@ Animations work better with Fade to Color and Stinger scene transitions in OBS. 
 
 ### Character Icons
 Character icons are currently a work in progress and do not function properly at this moment. I recommend leaving them off.
+
+![Gameplay Screen](https://media.discordapp.net/attachments/752590054538346506/1146520640925487164/gameplay.png?width=1067&height=600)
+![Break Screen](https://media.discordapp.net/attachments/752590054538346506/1146520641873383554/break.png?width=1067&height=600)
+![Player Screen](https://media.discordapp.net/attachments/752590054538346506/1146520641307156571/player_cam.png?width=1067&height=600)
+![Commentator Screen](![image](https://github.com/DrewG84/SmashControl-Graphics-Pack/assets/85595432/00989325-bdfd-4d5d-b45e-4dc2b06c233e)
+![Thumbnail](https://media.discordapp.net/attachments/752590054538346506/1146520641600770148/thumbnail.png?width=1067&height=600)
