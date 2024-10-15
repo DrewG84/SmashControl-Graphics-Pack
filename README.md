@@ -27,7 +27,7 @@ Animations work better with Fade to Color and Stinger scene transitions in OBS. 
 ### Character Icons
 Character icons are currently a work in progress and do not function properly at this moment. I recommend leaving them off.
 
-![Gameplay Screen](https://github.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/gameplay.png)
-![Break Screen](https://github.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/break.png)
-![Player Screen](https://github.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/player_cam.png)
-![Commentator Screen](https://github.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/comms_cam.png)
+![Gameplay Screen](https://raw.githubusercontent.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/gameplay.png)
+![Break Screen](https://raw.githubusercontent.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/break.png)
+![Player Screen](https://raw.githubusercontent.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/player_cam.png)
+![Commentator Screen](https://raw.githubusercontent.com/DrewG84/SmashControl-Graphics-Pack/refs/heads/main/graphics/images/preview-images/comms_cam.png)
