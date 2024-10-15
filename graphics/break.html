@@ -13,6 +13,11 @@
             :root {
                 --com1-vis: inline;
                 --com2-vis: inline;
+
+                --pro1-vis: flex;
+                --pro2-vis: flex;
+                --cpro1-vis: flex;
+                --cpro2-vis: flex;
             }
         </style>
     </head>
@@ -39,7 +44,7 @@
                 <div class="mid-scoreboard">
                 <div class="player1">
                     <div class="player1-tag"></div>
-			        <div class="player1-pronouns"></div>
+			        <div class="player1-pronouns" style="display:var(--pro1-vis)"></div>
                     <div class="image render player1-icon"><img src=""></div>
                 </div>
                 
@@ -49,7 +54,7 @@
                 </div>
 
                 
-                <div class="player2-pronouns"></div>
+                <div class="player2-pronouns" style="display:var(--pro2-vis)"></div>
                         <div class="image render player2-icon"><img src=""></div>
                     <div class="player2">
                         <div class="player2-tag"></div>
@@ -74,7 +79,7 @@
             
                 <div class="com1">
                     <div class="com1-tag"></div>
-			        <div class="com1-pronouns"></div>
+			        <div class="com1-pronouns" style="display:var(--cpro1-vis)"></div>
                 </div>
                 </div>
                 <!-- Commentator 2 -->
@@ -89,7 +94,7 @@
                     </div>
                 <div class="com2">
                     <div class="com2-tag"></div>
-			        <div class="com2-pronouns"></div>
+			        <div class="com2-pronouns" style="display:var(--cpro2-vis)"></div>
                 </div>
                 </div>
             </div>

@@ -145,6 +145,30 @@ $(() => {
 			toFix = ['.player1-tag', '.player2-tag', '.player1-pronouns', '.player2-pronouns', '.com1-tag', '.com2-tag', '.com1-pronouns', '.com2-pronouns', '.bracket-location', '.player1-score', '.player2-score']
 			toFix.map(FixSize);
 
+			if (player1pronouns.text() === "") {
+				document.documentElement.style.setProperty('--pro1-vis', 'none');
+			} else {
+				document.documentElement.style.setProperty('--pro1-vis', 'flex');
+			}
+
+			if (player2pronouns.text() === "") {
+				document.documentElement.style.setProperty('--pro2-vis', 'none');
+			} else {
+				document.documentElement.style.setProperty('--pro2-vis', 'flex');
+			}
+
+			if (commentary1pronouns.text() === "") {
+				document.documentElement.style.setProperty('--cpro1-vis', 'none');
+			} else {
+				document.documentElement.style.setProperty('--cpro1-vis', 'flex');
+			}
+
+			if (commentary2pronouns.text() === "") {
+				document.documentElement.style.setProperty('--cpro2-vis', 'none');
+			} else {
+				document.documentElement.style.setProperty('--cpro2-vis', 'flex');
+			}
+
 			if (commentary1.text() === "") {
 				// $(root).css("--com1-vis", inline);
 				document.documentElement.style.setProperty('--com1-vis', 'none');

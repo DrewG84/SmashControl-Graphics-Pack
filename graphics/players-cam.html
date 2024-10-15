@@ -9,6 +9,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     
         <script src="js/set-info.js"></script>
+        <style>
+            :root {
+                --player1-pronouns: ;
+                --player2-pronouns: ;
+
+                --pro1-vis: ;
+                --pro2-vis: ;
+                --cpro1-vis: ;
+                --cpro2-vis: ;
+            }
+        </style>
+        </head>
          <body>
             <div class="layout-container">
                 <div class="wrapper">
@@ -21,7 +33,7 @@
                     <div class="mid-scoreboard">
                     <div class="player1">
                         <div class="player1-tag"></div>
-                        <div class="player1-pronouns"></div>
+                        <div class="player1-pronouns" style="display:var(--pro1-vis)"></div>
                         <div class="image render player1-icon"><img src=""></div>
                     </div>
                     
@@ -31,7 +43,7 @@
                     </div>
     
                     
-                    <div class="player2-pronouns"></div>
+                    <div class="player2-pronouns" style="display:var(--pro2-vis)"></div>
                             <div class="image render player2-icon"><img src=""></div>
                         <div class="player2">
                             <div class="player2-tag"></div>
